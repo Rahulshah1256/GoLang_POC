@@ -1,0 +1,45 @@
+basePath: /api
+host: localhost:8888
+info:
+  contact: {}
+  description: A Simple Bank service API in Go using Gin framework
+  title: Simple Bank Service API
+  version: "1.0"
+paths:
+  /accounts:
+    post:
+      produces:
+      - application/json
+      responses: {}
+      tags:
+      - Account create
+  /accounts/{ID}:
+    get:
+      description: Get Account By ID data by id.
+      produces:
+      - application/json
+      responses: {}
+      summary: Get Account By Id
+      tags:
+      - Get Account By ID
+  /token/renew_access:
+    post:
+      responses: {}
+  /transfers:
+    post:
+      responses: {}
+  /users:
+    post:
+      produces:
+      - application/json
+      responses: {}
+      tags:
+      - User create
+  /users/login:
+    post:
+      produces:
+      - application/json
+      responses: {}
+      tags:
+      - Login User
+swagger: "2.0"

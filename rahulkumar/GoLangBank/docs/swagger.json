@@ -1,0 +1,69 @@
+{
+    "swagger": "2.0",
+    "info": {
+        "description": "A Simple Bank service API in Go using Gin framework",
+        "title": "Simple Bank Service API",
+        "contact": {},
+        "version": "1.0"
+    },
+    "host": "localhost:8888",
+    "basePath": "/api",
+    "paths": {
+        "/accounts": {
+            "post": {
+                "produces": [
+                    "application/json"
+                ],
+                "tags": [
+                    "Account create"
+                ],
+                "responses": {}
+            }
+        },
+        "/accounts/{ID}": {
+            "get": {
+                "description": "Get Account By ID data by id.",
+                "produces": [
+                    "application/json"
+                ],
+                "tags": [
+                    "Get Account By ID"
+                ],
+                "summary": "Get Account By Id",
+                "responses": {}
+            }
+        },
+        "/token/renew_access": {
+            "post": {
+                "responses": {}
+            }
+        },
+        "/transfers": {
+            "post": {
+                "responses": {}
+            }
+        },
+        "/users": {
+            "post": {
+                "produces": [
+                    "application/json"
+                ],
+                "tags": [
+                    "User create"
+                ],
+                "responses": {}
+            }
+        },
+        "/users/login": {
+            "post": {
+                "produces": [
+                    "application/json"
+                ],
+                "tags": [
+                    "Login User"
+                ],
+                "responses": {}
+            }
+        }
+    }
+}
